@@ -1,0 +1,8 @@
+b64-encode-decode:
+  id: b64-encode-decode.dev.v0
+  description: Test the model's ability to encode and decode base64 strings and answer questions in base64.
+  metrics: [accuracy]
+b64-encode-decode.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: b64_encode_decode/samples.jsonl
