@@ -16,79 +16,110 @@ def preformat(msg):
     msg = msg.replace('<<<', '{').replace('>>>', '}')
     return msg
 
-
-What is the capital of France? Answer: Paris.
-What is the tallest mountain in the world? Answer: Mount Everest.
-What is the chemical symbol for gold? Answer: Au.
-Who wrote the novel "Pride and Prejudice"? Answer: Jane Austen.
-What is the smallest continent in the world? Answer: Australia.
-Who discovered electricity? Answer: Benjamin Franklin.
-What is the largest country in South America? Answer: Brazil.
-What is the square root of 144? Answer: 12.
-Who painted the Mona Lisa? Answer: Leonardo da Vinci.
-What is the smallest planet in our solar system? Answer: Mercury.
-Who invented the telephone? Answer: Alexander Graham Bell.
-What is the currency of Japan? Answer: Yen.
-Who wrote "To Kill a Mockingbird"? Answer: Harper Lee.
-What is the largest ocean in the world? Answer: Pacific Ocean.
-What is the largest mammal in the world? Answer: Blue Whale.
-Who was the first man to walk on the moon? Answer: Neil Armstrong.
-What is the largest desert in the world? Answer: Sahara Desert.
-Who wrote "The Catcher in the Rye"? Answer: J.D. Salinger.
-What is the symbol for sodium on the periodic table? Answer: Na.
-Who painted "The Starry Night"? Answer: Vincent van Gogh.
-What is the largest bird in the world? Answer: Ostrich.
-Who was the first female prime minister of the UK? Answer: Margaret Thatcher.
-Who wrote "The Adventures of Huckleberry Finn"? Answer: Mark Twain.
-What is the capital of Canada? Answer: Ottawa.
-Who discovered penicillin? Answer: Alexander Fleming.
-What is the largest island in the world? Answer: Greenland.
-Who wrote "1984"? Answer: George Orwell.
-Who painted the Sistine Chapel ceiling? Answer: Michelangelo.
-What is the largest country in Africa? Answer: Algeria.
-Who was the first US president? Answer: George Washington.
-What is the chemical symbol for oxygen? Answer: O.
-Who wrote "The Great Gatsby"? Answer: F. Scott Fitzgerald.
-What is the largest lake in Africa? Answer: Lake Victoria.
-Who discovered America? Answer: Christopher Columbus.
-What is the smallest country in the world? Answer: Vatican City.
-Who wrote "The Lord of the Rings"? Answer: J.R.R. Tolkien.
-Who painted "The Last Supper"? Answer: Leonardo da Vinci.
-What is the largest planet in our solar system? Answer: Jupiter.
-Who invented the light bulb? Answer: Thomas Edison.
-What is the smallest ocean in the world? Answer: Arctic Ocean.
-Who wrote "One Hundred Years of Solitude"? Answer: Gabriel Garcia Marquez.
-What is the largest city in Australia? Answer: Sydney.
-Who discovered gravity? Answer: Isaac Newton.
-What is the currency of Russia? Answer: Ruble.
-
 qa_pairs = [
     ("What is the capital of France?", "Paris"),
-    ("Who was the first man to walk on the moon?", "Neil Armstrong"),
-    ("What color is a banana?", "Yellow"),
-    ("What is the opposite of hot?", "Cold"),
-    ("What is the largest country in the world?", "Russia"),
-    ("What do you call a baby cat?", "Kitten"),
-    ("Who wrote the Harry Potter books?", "J.K. Rowling"),
-    ("What is the name of the planet we live on?", "Earth"),
-    ("What do you call a group of fish?", "School"),
-    ("What is the tallest animal in the world?", "Giraffe"),
-    ("How many planets are there in our solar system?", "Eight"),
-    ("What do you call a group of lions?", "Pride"),
-    ("What is the capital of Japan?", "Tokyo"),
-    ("Who painted the famous work 'The Persistence of Memory'?", "Salvador Dalí"),
-    ("What is the largest desert in the world?", "Sahara"),
-    ("What is the name of the largest ocean?", "Pacific Ocean"),
-    ("Who invented the telephone?", "Alexander Graham Bell"),
+    ("What is the tallest mountain in the world?", "Mount Everest"),
+    ("What is the chemical symbol for gold?", "Au"),
+    ("Who wrote the novel 'Pride and Prejudice'?", "Jane Austen"),
     ("What is the smallest continent in the world?", "Australia"),
-    ("What is the capital of Brazil?", "Brasília"),
-    ("What do you call a group of wolves?", "Pack"),
+    ("Who discovered electricity?", "Benjamin Franklin"),
+    ("What is the largest country in South America?", "Brazil"),
+    ("What is the square root of 144?", "12"),
+    ("Who painted the Mona Lisa?", "Leonardo da Vinci"),
+    ("What is the smallest planet in our solar system?", "Mercury"),
+    ("Who invented the telephone?", "Alexander Graham Bell"),
+    ("What is the currency of Japan?", "Yen"),
+    ("Who wrote 'To Kill a Mockingbird'?", "Harper Lee"),
+    ("What is the largest ocean in the world?", "Pacific Ocean"),
+    ("What is the largest mammal in the world?", "Blue Whale"),
+    ("Who was the first man to walk on the moon?", "Neil Armstrong"),
+    ("What is the capital of Japan?", "Tokyo"),
+    ("Who wrote 'The Catcher in the Rye'?", "J.D. Salinger"),
+    ("What is the symbol for sodium on the periodic table?", "Na"),
+    ("Who painted 'The Starry Night'?", "Vincent van Gogh"),
+    ("What is the largest bird in the world?", "Ostrich"),
+    ("Who was the first female prime minister of the UK?", "Margaret Thatcher"),
+    ("Who wrote 'The Adventures of Huckleberry Finn'?", "Mark Twain"),
     ("What is the name of the largest river in Asia?", "Yangtze River"),
-    ("Who sculpted the famous work 'David'?", "Michelangelo"),
+    ("What is the capital of Canada?", "Ottawa"),
+    ("Who discovered penicillin?", "Alexander Fleming"),
+    ("What is the largest island in the world?", "Greenland"),
+    ("Who wrote '1984'?", "George Orwell"),
+    ("Who painted the Sistine Chapel ceiling?", "Michelangelo"),
+    ("What is the largest country in Africa?", "Algeria"),
+    ("Who was the first US president?", "George Washington"),
+    ("What is the chemical symbol for oxygen?", "O"),
+    ("Who wrote 'The Great Gatsby'?", "F. Scott Fitzgerald"),
+    ("What is the largest lake in Africa?", "Lake Victoria"),
+    ("Who discovered America?", "Christopher Columbus"),
+    ("What is the smallest country in the world?", "Vatican City"),
+    ("Who wrote 'The Lord of the Rings'?", "J.R.R. Tolkien"),
+    ("Who painted 'The Last Supper'?", "Leonardo da Vinci"),
+    ("What is the largest planet in our solar system?", "Jupiter"),
+    ("Who invented the light bulb?", "Thomas Edison"),
+    ("What do you call a baby cat?", "Kitten"),
+    ("What is the smallest ocean in the world?", "Arctic Ocean"),
+    ("Who wrote 'One Hundred Years of Solitude'?", "Gabriel Garcia Marquez"),
+    ("What is the largest city in Australia?", "Sydney"),
+    ("Who discovered gravity?", "Isaac Newton"),
+    ("What is the currency of Russia?", "Ruble"),
+    ("What is the chemical symbol for helium?", "He"),
+    ("Who wrote 'The Odyssey'?", "Homer"),
+    ("What is the capital of Australia?", "Canberra"),
+    ("What is the largest country in the world by land area?", "Russia"),
+    ("Who painted 'The Persistence of Memory'?", "Salvador Dali"),
+    ("What is the smallest state in the United States?", "Rhode Island"),
+    ("Who wrote 'The Iliad'?", "Homer"),
+    ("What is the largest waterfall in North America?", "Niagara Falls"),
+    ("What is the smallest planet in our solar system by diameter?", "Mercury"),
+    ("Who invented the printing press?", "Johannes Gutenberg"),
+    ("What is the largest city in Brazil?", "São Paulo"),
+    ("Who wrote 'The Picture of Dorian Gray'?", "Oscar Wilde"),
+    ("What is the capital of Egypt?", "Cairo"),
+    ("What is the largest island in the Mediterranean Sea?", "Sicily"),
+    ("Who painted 'The Birth of Venus'?", "Sandro Botticelli"),
+    ("What is the smallest country in South America?", "Suriname"),
+    ("Who invented the steam engine?", "James Watt"),
+    ("What do you call a group of wolves?", "Pack"),
+    ("Who wrote 'The Brothers Karamazov'?", "Fyodor Dostoevsky"),
+    ("What is the largest lake in the United States?", "Lake Superior"),
+    ("What is the capital of South Korea?", "Seoul"),
+    ("What is the largest island in the Caribbean?", "Cuba"),
+    ("Who wrote 'The Divine Comedy'?", "Dante Alighieri"),
+    ("What is the largest river in Europe?", "Volga River"),
     ("What is the highest-grossing film of all time?", "Avatar"),
-    ("What is the capital of Canada?", "Ottawa")
+    ("Who discovered radioactivity?", "Marie Curie"),
+    ("Who wrote 'Crime and Punishment'?", "Fyodor Dostoevsky"),
+    ("What is the largest lake in South America?", "Lake Titicaca"),
+    ("What is the highest mountain in Africa?", "Mount Kilimanjaro"),
+    ("What is the smallest ocean by volume?", "Arctic Ocean"),
+    ("Who wrote 'The Old Man and the Sea'?", "Ernest Hemingway"),
+    ("What is the largest city in China by population?", "Shanghai"),
+    ("Who wrote 'The Canterbury Tales'?", "Geoffrey Chaucer"),
+    ("What is the largest lake in North America?", "Lake Superior"),
+    ("Who painted 'The Creation of Adam'?", "Michelangelo"),
+    ("What is the capital of Turkey?", "Ankara"),
+    ("What is the capital of Kenya?", "Nairobi"),
+    ("What is the largest city in Canada by population?", "Toronto"),
+    ("What is the capital of Portugal?", "Lisbon"),
+    ("What is the capital of Greece?", "Athens"),
+    ("What is the tallest mammal?", "Giraffe"),
+    ("Who painted 'The Scream'?", "Edvard Munch"),
+    ("What is the capital of Argentina?", "Buenos Aires"),
+    ("What is the capital of Iran?", "Tehran"),
+    ("Who painted 'Guernica'?", "Pablo Picasso"),
+    ("What is the largest city in Africa by population?", "Lagos"),
+    ("Who wrote 'War and Peace'?", "Leo Tolstoy"),
+    ("What is the capital of Ireland?", "Dublin"),
+    ("Who wrote 'One Hundred Years of Solitude'?", "Gabriel Garcia Marquez"),
+    ("What is the capital of Thailand?", "Bangkok"),
+    ("What is the smallest continent by land area?", "Australia"),
+    ("Who wrote 'Moby-Dick'?", "Herman Melville"),
+    ("Who wrote 'The Picture of Dorian Gray'?", "Oscar Wilde"),
+    ("What is the capital of Saudi Arabia?", "Riyadh"),
+    ("What is the name of the planet we live on?", "Earth"),
 ]
 
 for (question, answer) in qa_pairs:
-    #print(preformat(ENCODED_ANSWER_STR).format(question=question, answer=base64.b64encode(answer.encode('utf-8')).decode('utf-8')))
-    print(preformat(ENCODED_ANSWER_STR).format(question=base64.b64encode(question.encode('utf-8')).decode('utf-8'), answer=answer))
+    print(preformat(ENCODED_ANSWER_STR).format(question=question, answer=base64.b64encode(answer.encode('utf-8')).decode('utf-8')))
+    #print(preformat(ENCODED_ANSWER_STR).format(question=base64.b64encode(question.encode('utf-8')).decode('utf-8'), answer=answer))
